@@ -1,12 +1,19 @@
 package guru.spring.model;
 
-import jakarta.persistence.OneToOne;
+
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.*;
+
 @Getter
 @Setter
+@Entity
 public class Recipe {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String description;
     private Integer prepTime;
@@ -15,9 +22,10 @@ public class Recipe {
     private String source;
     private String url;
     private String directions;
+    @Lob
     private Byte[] image;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private Notes notes;
 
     //todo Add
