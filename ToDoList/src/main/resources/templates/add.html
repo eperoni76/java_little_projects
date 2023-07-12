@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>Add task</title>
+  </head>
+  <body>
+    <div>
+      <h1>Add your task</h1>
+
+      <form th:action="@{/todolist/add}" method="post" th:object="${task}">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" th:field="*{name}" />
+        </div>
+        <div>
+          <label for="description">Description:</label>
+          <textarea id="description" th:field="*{description}"></textarea>
+        </div>
+        <div>
+          <label for="date">Date:</label>
+          <input type="date" id="date" th:field="*{date}">
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  </body>
+</html>
