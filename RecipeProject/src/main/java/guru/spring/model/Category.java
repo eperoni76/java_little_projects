@@ -7,6 +7,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
+@Table(name = "category")
 @Getter
 @Setter
 public class Category {
@@ -14,6 +15,7 @@ public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column
     private String description;
 
     @ManyToMany(mappedBy = "categories")

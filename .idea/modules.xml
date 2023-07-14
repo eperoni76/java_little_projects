@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Intellij_Projects.iml" filepath="$PROJECT_DIR$/.idea/Intellij_Projects.iml" />
       <module fileurl="file://$PROJECT_DIR$/Nomi_Swing/Nomi_Swing.iml" filepath="$PROJECT_DIR$/Nomi_Swing/Nomi_Swing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecipeProject/RecipeProject.iml" filepath="$PROJECT_DIR$/RecipeProject/RecipeProject.iml" />
     </modules>
   </component>
 </project>
